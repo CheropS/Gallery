@@ -2,6 +2,7 @@
 {# Load CSS and JavaScript #}
 {% bootstrap_css %}
 {% bootstrap_javascript %}
+{% load static%}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -13,6 +14,10 @@
       <title> Galeria </title>
     {% endif %}
     
+    {% block styles %}
+    {% bootstrap_css %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+  {% endblock %}
  
 
 </head>
