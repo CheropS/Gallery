@@ -15,7 +15,9 @@ class Location(models.Model):
 
     def __str__(self):
         return self.location
-        
+    
+          
+
 class Image(models.Model):
     image_id=models.ImageField(null=False, blank=False)
     name=models.CharField(max_length=30)
@@ -25,6 +27,9 @@ class Image(models.Model):
 
     def __str__(self):
         return self.name
+    
+    def save_image(self):
+        self.save()
 
 
 

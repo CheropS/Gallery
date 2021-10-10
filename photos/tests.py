@@ -6,7 +6,21 @@ class ImageTestCase(TestCase):
 
     #set up method
     def setUp(self):
-        self.sharry=Image(image_id='1', name='cat', description='cat purring')
+        self.location=Location(location='Nai')
+        self.location.save()
+        self.sharry=Image(image_id='1', name='cat', location=self.location, description='cat purring')
+
     #Testing instance
     def test_instance(self):
         self.assertTrue(isinstance(self.sharry, Image))
+
+    #Testing save method
+    def test_save_method(self):
+        self.sharry.save_image()
+        images=Image.objects.all()
+        self.assertTrue(len(images) > 0)
+    
+    #creating a new tag and saving it
+
+        self.new_image=Location(location='Eldoret')
+        self.new_image.save()
