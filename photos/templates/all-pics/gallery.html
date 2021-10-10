@@ -4,10 +4,10 @@
 {% block content %}
 {{block.super}}
 
-<div class="container">
+<!-- <div class="container">
     <h1>Bienvenido a la galería de fotos</h1>
     <h2><em>Welcome to the photo gallery</em></h2>
-</div>
+</div> -->
 
 <div class="container">
     <div class="row">
@@ -114,6 +114,9 @@
                     <li class="list-group-item">An item</li>
                     <li class="list-group-item">A second item</li>
                     <li class="list-group-item">A third item</li>
+
+                    
+                        <a href="{% url 'new-pictures' %}" class="btn btn-info btn-lg m-1">New Photo</a>
                 </ul>
             </div>
         </div>
