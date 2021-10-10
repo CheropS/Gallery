@@ -9,4 +9,114 @@
     <h2><em>Welcome to the photo gallery</em></h2>
 </div>
 
+<div class="container">
+    <div class="row">
+
+        <div class="col-md-9">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card my-2">
+                        <img class="image-thumbail"
+                            src="https://ae.visamiddleeast.com/dam/VCOM/global/travel-with-visa/images/visa-travel-carousel-02-640x640.jpg"
+                            alt="Card image cap">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Image name</h5>
+                            <small>Category: Travel</small>
+                        </div>
+
+                        <a href="{% url 'photo' 1 %}" class="btn btn-outline-dark btn-sm m-1">View</a>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card my-2">
+                        <img class="image-thumbail"
+                            src="https://static01.nyt.com/images/2020/09/06/dining/15JPGRILL1/15JPGRILL1-articleLarge-v4.jpg"
+                            alt="Card image cap">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Barbequed Chicken</h5>
+                            <small>Category: Food</small>
+                        </div>
+
+                        <a href="#" class="btn btn-outline-dark btn-sm m-1">View</a>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card my-2">
+                        <img class="image-thumbail"
+                            src="https://static.scientificamerican.com/sciam/cache/file/92E141F8-36E4-4331-BB2EE42AC8674DD3_source.jpg"
+                            alt="Card image cap">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Cute cat</h5>
+                            <small>Category: Pets</small>
+                        </div>
+
+                        <a href="#" class="btn btn-outline-dark btn-sm m-1">View</a>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card my-2">
+                        <img class="image-thumbail"
+                            src="https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/26155629/Siberian-Husky-head-portrait-outdoors.jpg"
+                            alt="Card image cap">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Siberian Husky</h5>
+                            <small>Category: Pets</small>
+                        </div>
+
+                        <a href="#" class="btn btn-outline-dark btn-sm m-1">View</a>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card my-2">
+                        <img class="image-thumbail"
+                            src="https://img-global.cpcdn.com/recipes/ed7a24cf9b54811b/680x482cq70/pan-roasted-potatoesserved-with-pan-fried-goat-meat-recipe-main-photo.jpg"
+                            alt="Card image cap">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Pan roasted potatoes with goat meat</h5>
+                            <small>Category: Food</small>
+                        </div>
+
+                        <a href="#" class="btn btn-outline-dark btn-sm m-1">View</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card my-2">
+                        <img class="image-thumbail"
+                            src="https://www.tripsavvy.com/thmb/GuglU2ETKl_qWnAB2QWZj4dNhDE=/2122x1194/smart/filters:no_upscale()/483084215-56a403a53df78cf772805c65.jpg"
+                            alt="Card image cap">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Winter in Paris</h5>
+                            <small>Category: Travel</small>
+                        </div>
+
+                        <a href="#" class="btn btn-outline-dark btn-sm m-1">View</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card" style="width: 18rem;">
+                <div class="card-header">
+                    Categories
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">An item</li>
+                    <li class="list-group-item">A second item</li>
+                    <li class="list-group-item">A third item</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock %}
