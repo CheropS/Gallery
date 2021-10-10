@@ -24,3 +24,9 @@ class ImageTestCase(TestCase):
 
         self.new_image=Location(location='Eldoret')
         self.new_image.save()
+
+    #deleting an image
+    def tearDown(self):
+        Image.objects.all().delete()
+        Category.objects.all().delete()
+        Location.objects.all().delete()
