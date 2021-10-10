@@ -6,7 +6,7 @@ def gallery(request):
     return render(request,'all-pics/gallery.html')
 
 def newPhoto(request):
-    return render (request, 'photos/new.html')
+    return render (request, 'all-pics/new.html')
 
 def photo(request):
-    return render(request, 'photos/photo.html')
+    return render(request, 'all-pics/photo.html')
