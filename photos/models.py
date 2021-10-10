@@ -14,7 +14,6 @@ class Category(models.Model):
     image_category=models.CharField(max_length=20)
     
 
-
     def __str__(self):
         return self.image_category
 
