@@ -6,7 +6,7 @@ class ImageTestCase(TestCase):
 
     #set up method
     def setUp(self):
-        self.sharry=Image(image_id='1', image_name='cat', image_description='cat purring', image_location='nairobi', image_category='pets')
+        self.sharry=Image(image_id='1', name='cat', description='cat purring')
     #Testing instance
     def test_instance(self):
         self.assertTrue(isinstance(self.sharry, Image))
