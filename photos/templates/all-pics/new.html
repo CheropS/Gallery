@@ -1,0 +1,45 @@
+{%extends 'all-pics/base.html'%}
+
+{% block content %}
+{{block.super}}
+
+<body class="m-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <a href="{% url 'gallery-photos' %}" class="btn btn-dark my-3">Back to Gallery</a>
+                <div class="card">
+                    <form action="">
+                        
+                        <div class="form-group m-3">
+                            <label for="">Description</label>
+                            <input name="description" placeholder="Description" class="form-control-file">
+                        </div>
+
+                        <div class="form-group m-3">
+                            <label for="">Select a Category</label>
+                            <select name="category" class="form-control-file"> 
+                                <!-- <option value="none">Select a category</option> -->
+
+                                {% for category in categories %} 
+                                    <option value='{{ category.name }}'>Select a category:</option>
+
+                                {% endfor % }
+
+                            </select>
+                        </div>
+
+                        <div class="form-group m-3">
+                            <label for="">Upload Image</label>
+                            <input type="file" class="form-control-file">
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<!-- {% endfor %} -->
+{% endblock %}
