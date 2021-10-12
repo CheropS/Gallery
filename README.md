@@ -9,7 +9,7 @@ To install the application, you can fork/clone it to your laptop and run it usin
 You then run the application using your favorite code viewer. 
 
 ## How to Use it
-You can follow the deployed link: https://sharryblog.herokuapp.com/ . A user can just look for images and also post their pictures. 
+You can follow the deployed link: . A user can just look for images and also post their pictures. 
 
 ## Programming Languages used
 The project was made using:
@@ -25,4 +25,4 @@ The project is made by Sharon Cherop, a student at Moringa School.
 You can reach me on Twitter via @sharrycherop
 
 #### Copyright
-September 2021. Nairobi, Kenya
+September 2021. Nairobi, Kenya. 
